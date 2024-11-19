@@ -8,8 +8,8 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+     <!-- Favicon -->
+     <link href="../../img/ICON.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,22 +52,32 @@
 
 
     <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-square" role="document"> <!-- Appliquez la classe ici -->
+        <div class="modal-content bg-dark">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/66M_hb16Uvc" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Video Modal End -->
+</div>
+<!-- Video Modal End -->
+
+
+
 
      <!-- Header Start -->
     <div class="container-fluid bg-primary d-flex align-items-center py-5" id="home" style="min-height: 100vh; max-width: 100vw;">
@@ -82,7 +92,7 @@
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="img/Resume Louanne DRONNE.pdf" class="btn btn-outline-light mr-5" download="Resume Louanne DRONNE.pdf">Download CV</a>
                         <button type="button" class="btn-play" data-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
                             <span></span>
@@ -120,8 +130,6 @@
                         <div class="col-sm-6 py-2"><h6>Licences: <span class="text-secondary">car, motorcycle, boat, drone</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Language: <span class="text-secondary">French and English</span></h6></div>
                     </div>
-                    <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -130,25 +138,22 @@
 
     <!-- Accroche portfolio Start-->
     
-    <div class="container-fluid bg-primary" id="home-cd" style="position: relative; min-height: 100px; width: 100%;">
+    <div class="container-fluid bg-primary position-relative" id="home-cd" style="min-height: 100px; width: 100%;">
         <div class="row">
-            <!-- Image du CD avec une taille réduite et alignée à gauche -->
             <div class="col-lg-6 position-relative" style="z-index: 2;">
                 <a href="app/portfolio/portfolio.component.html" id="cd">
                     <img class="img-fluid the-works" src="img/cd-rom.png" alt="cd - the work" style="width: 65%;">
                 </a>
             </div>
-            <!-- Colonne des images de console collée complètement à droite de l'écran -->
             <div class="col-lg-6 d-flex justify-content-end" style="position: relative; padding: 0;">
                 <div class="d-flex flex-row justify-content-end position-absolute" style="right: 0; top: 0; width: auto;">
-                    <!-- Image 1 avec une taille réduite -->
                     <img class="img-fluid" src="img/console1.png" alt="Image gauche" style="z-index: 1; width: 100px;">
-                    <!-- Image 2 avec une taille réduite et marge ajustée -->
                     <img class="img-fluid" src="img/console2.png" alt="Image droite" style="margin-left: -20px; z-index: 3; width: 100px;">
                 </div>
             </div>
         </div>
-    </div>     
+        <img src="img/CallToAction.png" alt="Image centrée" style="position: absolute; top: 50%; left: 50%; margin-left: 100px; transform: translate(-50%, -50%); z-index: 1; width: 500px;">
+    </div>
     
     <!-- Accroche portfolio End -->
 
@@ -343,22 +348,9 @@
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/louanne-dronne-9a6089234/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/ardan_arts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
         </div>
     </div>
     <!-- Footer End -->

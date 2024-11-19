@@ -10042,3 +10042,16 @@ h6,
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+.modal-square {
+  max-width: 400px; /* Largeur de la fenêtre modale */
+  max-height: 400px; /* Hauteur de la fenêtre modale */
+}
+
+.modal-body video {
+  width: 100%; /* Vidéo s'adapte à la largeur */
+  height: auto;
+  max-height: 400px; /* Hauteur max pour correspondre à la modale */
+}
+
+
